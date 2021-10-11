@@ -13,9 +13,41 @@
 </head>
 
 <body>
-    <div id="interface">
+    <div class="menu">
         <div class="title text">_I_GAME!!!</div>
-        <button id="btn" class="btn menu-holder">GO!!!</button>
+        <div class="menu-holder">
+            <div class="start">
+                <button class="btn" id="startButton">Start game!</button>
+            </div>
+            <div class="main" id="main" hidden>
+                <button class="btn" id="nextLevel">Next level!</button>
+                <button class="btn" id="selectLevel">Select level!</button>
+                <button class="btn" id="settings">Settings</button>
+            </div>
+            <div class="levels-table" hidden>
+                <table>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <button class="btn" id="return">Return</button>
+            </div>
+            <div class="settings" hidden>
+                <div>
+                    <p>Height of header</p>
+                    <input type="range" id="input_headerHeight" min="24" max="48">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header" hidden>
+        <div class="info-header">
+            <p id="currentLevel">Current level:</p>
+            <p id="time">Time:</p>
+            <p id="moves">Moves:</p>
+        </div>
     </div>
 
     <script src="main.js"></script>

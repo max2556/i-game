@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 .container {
     width: 70%;
     margin-left: auto;
@@ -21,9 +22,10 @@
 
 .btn {
     width: 100%;
+    margin-top: 0.1rem;
     margin-right: 0.5rem;
     padding: 0.7rem;
-    color: blanchedalmond;
+    color: rgb(255, 255, 255);
     background: black;
     text-align: center;
     text-transform: uppercase;
@@ -38,8 +40,16 @@
 .btn:hover {
     transition: 0.15s ease-in-out;
     color: black;
-    background: blanchedalmond;
+    background: rgb(255, 255, 255);
 }
+
+.move-away {
+    transition: 3.3s ease-in-out !important;
+    position: fixed !important;
+    left: -200px !important;
+}
+
+.move-to-center {}
 
 .menu-holder {
     position: absolute;
@@ -48,4 +58,56 @@
     top: 40%;
     left: 35%;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: absolute;
+    width: 100%
+}
+
+.info-header {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: radial-gradient(circle at center, #111111 0, #444444 40%, #777777 60%, transparent 90%);
+}
+
+.info-header p {
+    color: white;
+    margin-right: 2rem;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.levels-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.levels-table td {
+    border: 0 !important;
+    padding: 0px !important;
+    margin: 0px;
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    background: black;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    font-size: 36px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.levels-table button {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
 }
